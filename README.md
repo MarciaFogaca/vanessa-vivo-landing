@@ -2,6 +2,10 @@
 
 # Vanessa de Mendonça | Vivo Empresas
 
+### 🌐 Projeto em produção
+
+🚀 **[Acessar a landing page](https://vanessademendonca.vercel.app)**
+
 ### Landing page de apresentação comercial B2B
 
 **Uma experiência digital para apresentar soluções empresariais e facilitar o primeiro contato comercial.**
@@ -58,9 +62,13 @@ vanessa-vivo-landing/
 │   ├── App.tsx                 # Página e seções principais
 │   ├── main.tsx                # Ponto de entrada da aplicação
 │   └── styles.css              # Estilos da interface
+├── .gitignore
 ├── index.html
 ├── package.json
 ├── package-lock.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
 ├── vite.config.ts
 └── README.md
 ```
@@ -75,7 +83,7 @@ vanessa-vivo-landing/
    git clone https://github.com/MarciaFogaca/vanessa-vivo-landing.git
    ```
 
-2. Entre na pasta:
+2. Entre na pasta do projeto:
 
    ```bash
    cd vanessa-vivo-landing
@@ -107,7 +115,9 @@ Os arquivos resultantes são gerados na pasta `dist/`.
 
 ## Publicação
 
-O projeto pode ser publicado em plataformas de hospedagem para aplicações frontend, como a **Vercel**, conectando o repositório do GitHub.
+O projeto está publicado na **Vercel**, com implantação a partir do repositório no GitHub.
+
+🔗 **Site em produção:** [https://vanessademendonca.vercel.app](https://vanessademendonca.vercel.app)
 
 | Configuração | Valor |
 | --- | --- |
@@ -117,7 +127,7 @@ O projeto pode ser publicado em plataformas de hospedagem para aplicações fron
 
 ## Privacidade e contato
 
-O formulário solicita informações de contato e dados da empresa para preparar uma mensagem no WhatsApp. Antes de publicar ou utilizar o site em campanhas, é importante revisar os textos de privacidade, o tratamento dos dados e os links de contato.
+O formulário solicita informações de contato e dados da empresa para preparar uma mensagem no WhatsApp. Antes de utilizar o site em campanhas, é importante revisar os textos de privacidade, o tratamento dos dados e os links de contato.
 
 ## Desenvolvimento
 
