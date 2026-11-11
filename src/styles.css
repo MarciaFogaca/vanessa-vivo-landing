@@ -719,150 +719,328 @@ html {
 }
 
 /* HEADER FIXO — AJUSTES RESPONSIVOS E ACESSIBILIDADE */
+
 @media (max-width:640px) {
+
   html { scroll-padding-top:85px; }
+
   .main-nav { top:70px; border-radius:0 0 16px 16px; }
+
 }
 
-
 /* ==========================================
+
    BOTÕES — ACABAMENTO PREMIUM
+
    Somente estilos de botões e links de ação.
+
    ========================================== */
 
 /* Botão principal do Hero e envio do formulário */
+
 .hero-section .hero-actions .button-primary,
+
 .contact-form .form-submit {
+
   min-height: 52px;
+
   padding: 15px 26px;
+
   border: 1px solid rgba(255, 165, 225, 0.35);
+
   border-radius: 14px;
+
   background: linear-gradient(115deg, #f319a4 0%, #d40083 60%, #b90086 100%);
+
   color: #fff;
+
   font: 700 13px/1.3 Manrope, sans-serif;
+
   letter-spacing: 0.1px;
+
   box-shadow: 0 8px 22px rgba(214, 0, 131, 0.23);
+
   transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+
 }
 
 .hero-section .hero-actions .button-primary:hover,
+
 .contact-form .form-submit:not(:disabled):hover {
+
   transform: translateY(-2px);
+
   filter: brightness(1.07);
+
   box-shadow: 0 12px 28px rgba(214, 0, 131, 0.34);
+
 }
 
 /* Ação secundária do Hero */
+
 .hero-section .hero-actions .text-link {
+
   min-height: 52px;
+
   padding: 14px 23px;
+
   border: 1px solid rgba(255, 255, 255, 0.34);
+
   border-radius: 14px;
+
   background: rgba(255, 255, 255, 0.045);
+
   color: #fff;
+
   font: 700 13px/1.3 Manrope, sans-serif;
+
   transition: transform 220ms ease, background 220ms ease, border-color 220ms ease;
+
 }
 
 .hero-section .hero-actions .text-link:hover {
+
   transform: translateY(-2px);
+
   background: rgba(255, 255, 255, 0.11);
+
   border-color: rgba(255, 255, 255, 0.68);
+
 }
 
 /* CTA da seção Diferenciais */
+
 .benefits-copy .button-dark {
+
   min-height: 50px;
+
   padding: 14px 23px;
+
   border-radius: 14px;
+
   font: 700 13px/1.3 Manrope, sans-serif;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+
 }
 
 /* Foco acessível e respeito a movimento reduzido */
+
 .hero-actions a:focus-visible,
+
 .benefits-copy .button-dark:focus-visible,
+
 .contact-form .form-submit:focus-visible {
+
   outline: 3px solid #f5a3df;
+
   outline-offset: 3px;
+
 }
 
 @media (max-width: 640px) {
+
   .hero-section .hero-actions { gap: 13px; }
+
   .hero-section .hero-actions .button-primary,
+
   .hero-section .hero-actions .text-link { max-width: 100%; }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-section .hero-actions .button-primary,
-  .hero-section .hero-actions .text-link,
-  .contact-form .form-submit { transition: none; }
-}
 
+  .hero-section .hero-actions .button-primary,
+
+  .hero-section .hero-actions .text-link,
+
+  .contact-form .form-submit { transition: none; }
+
+}
 
 /* MENU APROVADO — destaque interativo, sem alterar as demais seções */
+
 .site-header .main-nav { gap: 12px; }
+
 .site-header .main-nav > a:not(.nav-cta) {
+
   position: relative;
+
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   min-height: 42px;
+
   padding: 11px 17px;
+
   border-radius: 999px;
+
   color: #e8e0eb;
+
   background: transparent;
+
   font-weight: 600;
+
   transition: background-color 180ms ease, color 180ms ease,
+
     box-shadow 180ms ease, transform 130ms ease;
+
 }
+
 .site-header .main-nav > a:not(.nav-cta)::after {
+
   content: '';
+
   position: absolute;
+
   left: 22%;
+
   right: 22%;
+
   bottom: 2px;
+
   height: 3px;
+
   border-radius: 999px;
+
   background: #f000a2;
+
   opacity: 0;
+
   transform: scaleX(.4);
+
   transition: opacity 180ms ease, transform 180ms ease;
+
 }
+
 .site-header .main-nav > a:not(.nav-cta):hover {
+
   color: #fff;
+
   background: rgba(168, 35, 190, .27);
+
   box-shadow: 0 0 22px rgba(198, 34, 218, .15);
+
   transform: translateY(-1px);
+
 }
+
 .site-header .main-nav > a:not(.nav-cta):active {
+
   color: #fff;
+
   background: #d80091;
+
   box-shadow: inset 0 2px 8px rgba(35, 0, 28, .3);
+
   transform: translateY(1px) scale(.97);
+
 }
+
 .site-header .main-nav > a:not(.nav-cta).active::after {
+
   opacity: 1;
+
   transform: scaleX(1);
+
 }
+
 .site-header .main-nav > a:not(.nav-cta):focus-visible {
+
   outline: 2px solid #ff9be4;
+
   outline-offset: 3px;
+
 }
+
 @media (max-width: 640px) {
+
   .site-header .main-nav { gap: 4px; }
+
   .site-header .main-nav > a:not(.nav-cta) {
+
     justify-content: flex-start;
+
     padding: 14px 17px;
+
   }
+
   .site-header .main-nav > a:not(.nav-cta)::after {
+
     left: 17px;
+
     right: auto;
+
     width: 54px;
+
     bottom: 4px;
+
   }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .site-header .main-nav > a:not(.nav-cta),
+
+  .site-header .main-nav > a:not(.nav-cta)::after { transition: none; }
+
+}
+
+
+/* Ajustes de UX: WhatsApp flutuante e feedback do formulário */
+.floating-whatsapp {
+  transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+}
+.floating-whatsapp-hidden,
+.floating-whatsapp-hidden:hover {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+.form-toast {
+  position: fixed;
+  top: 98px;
+  right: 24px;
+  z-index: 1100;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  width: min(410px, calc(100vw - 32px));
+  padding: 17px;
+  border: 1px solid #e9dcec;
+  border-radius: 16px;
+  background: #fff;
+  color: #211a27;
+  box-shadow: 0 18px 55px rgba(23, 18, 31, .22);
+  animation: form-toast-enter .25s ease-out both;
+}
+.form-toast__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  color: #7900a5;
+  background: #f5eaf9;
+}
+.form-toast--blocked .form-toast__icon { color: #a15a11; background: #fff1dc; }
+.form-toast__content { flex: 1; min-width: 0; }
+.form-toast__content strong { display: block; font: 800 13px Manrope, sans-serif; }
+.form-toast__content p { margin: 6px 0 0; font-size: 12px; line-height: 1.55; color: #706a75; }
+.form-toast__content a { display: inline-flex; align-items: center; gap: 5px; margin-top: 9px; color: #7900a5; font-size: 12px; font-weight: 700; text-decoration: underline; }
+.form-toast__close { flex: none; display: grid; place-items: center; padding: 4px; border: 0; background: transparent; color: #706a75; cursor: pointer; }
+.form-toast__close:focus-visible, .form-toast__content a:focus-visible { outline: 2px solid #7900a5; outline-offset: 3px; }
+@keyframes form-toast-enter { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 640px) {
+  .form-toast { top: 82px; left: 16px; right: 16px; width: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .site-header .main-nav > a:not(.nav-cta),
-  .site-header .main-nav > a:not(.nav-cta)::after { transition: none; }
+  .form-toast { animation: none; }
+  .floating-whatsapp { transition: none; }
 }
